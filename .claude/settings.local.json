@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(uv init:*)",
+      "Bash(gh auth:*)",
+      "Bash(gh extension install:*)",
+      "Bash(gh api:*)",
+      "Bash(git remote get-url:*)",
+      "Bash(gh repo create:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": []
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'uv run .claude/hooks/ruff_fix.py'"
+          }
+        ]
+      }
+    ]
+  }
+}
