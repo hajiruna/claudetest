@@ -9,7 +9,11 @@
       "Bash(git remote get-url:*)",
       "Bash(gh repo create:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(uv add:*)",
+      "Bash(uv run streamlit run:*)",
+      "Bash(uv sync:*)",
+      "Bash(uv run:*)"
     ],
     "deny": []
   },
