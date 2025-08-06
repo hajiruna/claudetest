@@ -13,7 +13,9 @@
       "Bash(uv add:*)",
       "Bash(uv run streamlit run:*)",
       "Bash(uv sync:*)",
-      "Bash(uv run:*)"
+      "Bash(uv run:*)",
+      "Bash(check_status.bat)",
+      "Bash(./check_status.bat)"
     ],
     "deny": []
   },
